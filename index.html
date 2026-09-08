@@ -25,6 +25,8 @@
             float: right;
             color: #c8b7b7;
             margin-left: 8px;
+            font-size: 0.875rem;
+            font-style: italic;
         }
 
         .question-content ol,
@@ -1617,14 +1619,23 @@
                 topic: "Chemistry Basic",
                 subtopic: "Planet Earth",
                 difficulty: "Medium",
-                text: ` 
-                        <p>1st statements: Sulphur is classified as a non-metal.</p>
-                        <p>2nd statement</strong>: Sulphur does not react with dilute acids.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Sulphur is classified as a non-metal.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Sulphur does not react with dilute acids.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
-                    `A. (1) only`,
-                    `B. (2) only`,
-                    `C. (1) and (2)`,
-                    `D. Neither (1) nor (2)`
+                    'A. Both statements are true and 2nd statement explains 1st.',
+                    'B. Both statements are true but 2nd statement does not explain it.',
+                    'C. Only the 1st statement is true.',
+                    'D. Neither statement is true.'
                 ],
                 correct: "C",
                 explanation: "Sulphur is a non-metal (1) and does not react with dilute acids (2). Both statements are correct."
@@ -2808,7 +2819,24 @@
                 topic: "Microscopic World I",
                 subtopic: "Periodic Table",
                 difficulty: "Easy",
-                text: `Directions: Questions CE91_01 and CE91_02 refer to the following table. <table class="w-full text-sm border-collapse border border-slate-200 my-2"><tbody><tr><td class="border border-slate-200 px-3 py-1">Element</td><td class="border border-slate-200 px-3 py-1">W</td><td class="border border-slate-200 px-3 py-1">X</td><td class="border border-slate-200 px-3 py-1">W</td><td class="border border-slate-200 px-3 py-1">X</td></tr><tr><td class="border border-slate-200 px-3 py-1">Atomic number</td><td class="border border-slate-200 px-3 py-1">4</td><td class="border border-slate-200 px-3 py-1">8</td><td class="border border-slate-200 px-3 py-1">14</td><td class="border border-slate-200 px-3 py-1">20</td></tr></tbody></table> Which of the following elements are likely to be metals?`,
+                text: `Directions: Questions CE91_01 and CE91_02 refer to the following table. 
+                    <table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">Element</td><td class="border border-slate-200 px-3 py-1">W</td>
+                                <td class="border border-slate-200 px-3 py-1">X</td>
+                                <td class="border border-slate-200 px-3 py-1">W</td>
+                                <td class="border border-slate-200 px-3 py-1">X</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">Atomic number</td>
+                                <td class="border border-slate-200 px-3 py-1">4</td>
+                                <td class="border border-slate-200 px-3 py-1">8</td>
+                                <td class="border border-slate-200 px-3 py-1">14</td>
+                                <td class="border border-slate-200 px-3 py-1">20</td>
+                            </tr>
+                        </tbody>
+                    </table> Which of the following elements are likely to be metals?`,
                 choices: [
                     "A. W and X",
                     "B. W and Z",
@@ -2943,11 +2971,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Both zinc and molten sodium chloride conduct electricity.</p><p>2nd statement: Both zinc and molten sodium chloride contain mobile ions.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Both zinc and molten sodium chloride conduct electricity.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Both zinc and molten sodium chloride contain mobile ions.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "C",
@@ -3150,12 +3189,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Hydrogen chloride has a lower melting point than sodium chloride.</p>
-                        <p> 2nd statement: In each molecule of hydrogen chloride, a hydrogen and a chlorine atom are joined together by a covalent bond.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Hydrogen chloride has a lower melting point than sodium chloride.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">In each molecule of hydrogen chloride, a hydrogen and a chlorine atom are joined together by a covalent bond.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "B",
@@ -3471,11 +3520,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: The melting point of hydrogen chloride is lower than that of potassium chloride.</p><p>2nd statement: Hydrogen chloride is a covalent compound whereas potassium chloride is an ionic compound.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The melting point of hydrogen chloride is lower than that of potassium chloride.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Hydrogen chloride is a covalent compound whereas potassium chloride is an ionic compound.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "B",
@@ -3491,11 +3551,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Both dry ice and quartz exist in the form of discrete molecules.</p><p>2nd statement: Carbon and silicon atoms have the same number of electrons in their outermost shells.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Both dry ice and quartz exist in the form of discrete molecules.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Carbon and silicon atoms have the same number of electrons in their outermost shells.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "C",
@@ -3711,11 +3782,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Chemical Bond",
                 difficulty: "Easy",
-                text: `1st statement: Element X (atomic number 11) reacts with element Y (atomic number 16) to form an ionic compound. 2nd statement: Each atom of X loses one electron and each atom of Y accepts two electrons to form a compound with X<sub>2</sub>Y.`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Element X (atomic number 11) reacts with element Y (atomic number 16) to form an ionic compound.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Each atom of X loses one electron and each atom of Y accepts two electrons to form a compound with X<sub>2</sub>Y.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "A",
@@ -3923,12 +4005,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Easy",
-                text: `<p>1st statement: Metals have good thermal conductivity.</p>
-                        <p>2nd statement: Metals are composed of giant lattices of positive ions surrounded by valence electrons which are free to move throughout the lattice.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Metals have good thermal conductivity.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Metals are composed of giant lattices of positive ions surrounded by valence electrons which are free to move throughout the lattice.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "A",
@@ -4103,12 +4195,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Carbon dioxide and silicon dioxide have similar physical properties.</p>
-                        <p> 2nd statement: The atoms of carbon and silicon have the same number of electrons in their outermost shells.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Carbon dioxide and silicon dioxide have similar physical properties.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The atoms of carbon and silicon have the same number of electrons in their outermost shells.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "C",
@@ -4310,8 +4412,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Periodic Table",
                 difficulty: "Easy",
-                text: `<p>1st statement: Lithium is the most reactive element in Group I of Periodic Table.</p>
-                <p>2nd statement: Among the Group I elements, lithium loses electrons most readily.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Lithium is the most reactive element in Group I of Periodic Table.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Among the Group I elements, lithium loses electrons most readily.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -4401,8 +4513,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Easy",
-                text: `<p>1st statement: Combustion of diamond gives carbon dioxide.</p>
-                        <p>2nd statement: Diamond is a crystalline form of carbon.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Combustion of diamond gives carbon dioxide.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Diamond is a crystalline form of carbon.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -4422,8 +4544,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Easy",
-                text: `<p>1st statement: When iodine sublimes, it absorbs energy.</p>
-                        <p>2nd statement: Energy is required to overcome the attractive force between iodine molecules.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">When iodine sublimes, it absorbs energy.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Energy is required to overcome the attractive force between iodine molecules.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -4522,8 +4654,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Atomic Structure",
                 difficulty: "Easy",
-                text: `<p>1st statement: <sup>3</sup><sup>5</sup>Cl and <sup>3</sup><sup>7</sup>Cl have the same chemical properties.</p>
-                        <p>2nd statement: The number of electrons in the outermost shell of a <sup>3</sup><sup>5</sup>Cl atom is equal to that of a <sup>3</sup><sup>7</sup>Cl atom.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1"><sup>3</sup><sup>5</sup>Cl and <sup>3</sup><sup>7</sup>Cl have the same chemical properties.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The number of electrons in the outermost shell of a <sup>3</sup><sup>5</sup>Cl atom is equal to that of a <sup>3</sup><sup>7</sup>Cl atom.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -5292,8 +5434,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Easy",
-                text: `<p>1st statement: Molten sulphur is a good conductor of electricity.</p>
-                        <p>2nd statement: Sulphur molecules are mobile in molten sulphur.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Molten sulphur is a good conductor of electricity.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Sulphur molecules are mobile in molten sulphur.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -5313,8 +5465,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Atomic Structure",
                 difficulty: "Easy",
-                text: `<p>1st statement: Isotopes of an element have the same mass.</p>
-                        <p>2nd statement: Isotopes of an element have the same number of protons.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Isotopes of an element have the same mass.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Isotopes of an element have the same number of protons.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -5572,8 +5734,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Ammonium chloride is an ionic compound.</p>
-                    <p>2nd statement: Ammonium chloride can conduct electricity in aqueous state.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Ammonium chloride is an ionic compound.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Ammonium chloride can conduct electricity in aqueous state.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
@@ -5857,12 +6029,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: Carbon dioxide and silicon dioxide have similar physical properties.</p>
-                        <p>2nd statement: The atoms of carbon and silicon have the same number of electrons in their outermost shells.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Carbon dioxide and silicon dioxide have similar physical properties.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The atoms of carbon and silicon have the same number of electrons in their outermost shells.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "C",
@@ -5878,12 +6060,22 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Medium",
-                text: `<p>1st statement: The reaction of ethanoic acid with ethanol is a neutralization.</p>
-                        <p>2nd statement: Water is one of the products in the reaction of ethanoic acid and ethanol.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The reaction of ethanoic acid with ethanol is a neutralization.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Water is one of the products in the reaction of ethanoic acid and ethanol.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     'A. Both statements are true and 2nd statement explains 1st.',
                     'B. Both statements are true but 2nd statement does not explain it.',
-                    'C. Only the 2nd statement is true.',
+                    'C. Only the 1st statement is true.',
                     'D. Neither statement is true.'
                 ],
                 correct: "A",
@@ -6242,8 +6434,18 @@
                 topic: "Microscopic World I",
                 subtopic: "Structure and Properties",
                 difficulty: "Easy",
-                text: `<p>1st statement: The melting point of silicon is higher than that of aluminium.</p>
-                        <p> 2nd statement: The number of electrons in a silicon atom is greater than that in an aluminium atom.</p>`,
+                text: `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The melting point of silicon is higher than that of aluminium.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">The number of electrons in a silicon atom is greater than that in an aluminium atom.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 choices: [
                     "A. Both statements are true and 2nd statement explains 1st.",
                     "B. Both statements are true but 2nd statement does not explain 1st.",
@@ -6398,8 +6600,18 @@
                 "subtopic": "Structure and Properties",
                 "difficulty": "Easy",
                 "category": "mc",
-                "text": `<p>1st statement: Mercury has good electrical conductivity at room temperature.</p>
-                        <p>2nd statement: Mercury has delocalized electrons.</p>`,
+                "text": `<table class="w-full text-sm border-collapse border border-slate-200 my-2">
+                        <tbody
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">1st statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Mercury has good electrical conductivity at room temperature.</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 px-3 py-1">2nd statement:</td>
+                                <td class="border border-slate-200 px-3 py-1">Mercury has delocalized electrons.</td>  
+                            </tr>
+                        </tbody>
+                    </table>`,
                 "choices": [
                     "A. Both statements are true and 2nd statement explains 1st.",
                     "B. Both statements are true but 2nd statement does not explain 1st.",
