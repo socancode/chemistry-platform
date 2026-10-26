@@ -62,6 +62,39 @@
         .question-content li {
             margin-bottom: 0.25rem;
         }
+
+        /* Standardize table presentation across all question content */
+        .question-content table,
+        .answer-content table,
+        #quiz-choices-container table,
+        table.w-full.text-sm.border-collapse.border.border-slate-200.my-2 {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #e2e8f0;
+            margin: 0.5rem 0;
+        }
+
+        .question-content th,
+        .answer-content th,
+        #quiz-choices-container th,
+        .question-content td,
+        .answer-content td,
+        #quiz-choices-container td,
+        table.w-full.text-sm.border-collapse.border.border-slate-200.my-2 th,
+        table.w-full.text-sm.border-collapse.border.border-slate-200.my-2 td {
+            border: 1px solid #e2e8f0;
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .question-content thead th,
+        .answer-content thead th,
+        #quiz-choices-container thead th,
+        table.w-full.text-sm.border-collapse.border.border-slate-200.my-2 thead th {
+            background-color: #f8fafc;
+            font-weight: 700;
+        }
     </style>
     <script>
         tailwind.config = {
